@@ -1,0 +1,28 @@
+GET /get?echo=42&ll=14,30&name=with%20space%3F
+accept-encoding: gzip,deflate
+accept: */*
+
+HTTP/1.1 200 OK
+server: nginx
+date: Wed, 28 Dec 2016 16:35:28 GMT
+content-type: application/json
+content-length: 373
+connection: close
+access-control-allow-origin: *
+access-control-allow-credentials: true
+
+{
+  "args": {
+    "echo": "42", 
+    "ll": "14,30", 
+    "name": "with space?"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Host": "httpbin.org", 
+    "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+  }, 
+  "origin": "24.121.20.110", 
+  "url": "http://httpbin.org/get?echo=42&ll=14,30&name=with space%3F"
+}
