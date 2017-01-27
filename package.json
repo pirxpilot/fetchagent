@@ -1,6 +1,6 @@
 {
   "name": "fetchagent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Flex API for global fetch",
   "author": {
     "name": "Damian Krzeminski",
