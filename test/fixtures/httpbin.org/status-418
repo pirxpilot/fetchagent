@@ -1,0 +1,23 @@
+GET /status/418
+accept-encoding: gzip,deflate
+accept: */*
+
+HTTP/1.1 418 I'M A TEAPOT
+server: nginx
+date: Fri, 27 Jan 2017 00:56:47 GMT
+content-length: 135
+connection: close
+access-control-allow-origin: *
+x-more-info: http://tools.ietf.org/html/rfc2324
+access-control-allow-credentials: true
+
+
+    -=[ teapot ]=-
+
+       _...._
+     .'  _ _ `.
+    | ."` ^ `". _,
+    \_;`"---"`|//
+      |       ;/
+      \_     _/
+        `"""`

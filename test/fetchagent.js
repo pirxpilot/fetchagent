@@ -58,4 +58,16 @@ describe('fetchagent', function () {
       .should.finally.have
         .property('url');
   });
+
+  it('should parse body even if status !== 200', function(done) {
+    return fetchagent
+      .get('http://httpbin.org/status/418')
+      .end(function(err, body) {
+        err.should.have.property('status', 418);
+        err.should.have.property('response');
+        body.should.match(/teapot/);
+        done();
+      });
+  });
+
 });
