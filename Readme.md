@@ -58,13 +58,13 @@ To send request use on of:
 
 ## License
 
-MIT © [Damian Krzeminski](https://code42day.com)
+MIT © [Damian Krzeminski](https://pirxpilot.me)
 
 [npm-image]: https://img.shields.io/npm/v/fetchagent.svg
 [npm-url]: https://npmjs.org/package/fetchagent
 
-[travis-url]: https://travis-ci.org/code42day/fetchagent
-[travis-image]: https://img.shields.io/travis/code42day/fetchagent.svg
+[travis-url]: https://travis-ci.org/pirxpilot/fetchagent
+[travis-image]: https://img.shields.io/travis/pirxpilot/fetchagent.svg
 
-[gemnasium-image]: https://img.shields.io/gemnasium/code42day/fetchagent.svg
-[gemnasium-url]: https://gemnasium.com/code42day/fetchagent
+[gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/fetchagent.svg
+[gemnasium-url]: https://gemnasium.com/pirxpilot/fetchagent
