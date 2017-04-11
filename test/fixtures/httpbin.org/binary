@@ -1,0 +1,15 @@
+GET /bytes/30
+accept-encoding: gzip,deflate
+accept: */*
+
+HTTP/1.1 200 OK
+connection: close
+server: gunicorn/19.7.1
+date: Tue, 11 Apr 2017 23:14:45 GMT
+content-type: application/octet-stream
+content-length: 30
+access-control-allow-origin: *
+access-control-allow-credentials: true
+via: 1.1 vegur
+
+¸gg/ü~ãÄ”ÔT°úíH1Ù¯´ò³–Â8¨

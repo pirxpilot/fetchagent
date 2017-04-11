@@ -70,4 +70,24 @@ describe('fetchagent', function () {
       });
   });
 
+  it.only('should use custom parsing', function(done) {
+    fetchagent
+      .get('http://httpbin.org/bytes/30')
+      .parser(function(contentType) {
+        if (contentType === 'application/octet-stream') {
+          // FIXME: we would like to test ArrayBuffer but it's not implemented by node-fetch yet
+          // see: https://github.com/bitinn/node-fetch/issues/210
+          // return 'arrayBuffer';
+          return 'buffer';
+        }
+      })
+      .end(function(err, body) {
+        should.not.exist(err);
+        body.should.be.instanceof(Buffer);
+        body.should.have.property('length', 30);
+        done();
+      });
+  });
+
+
 });
