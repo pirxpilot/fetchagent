@@ -1,4 +1,9 @@
 
+1.1.0 / 2017-04-11
+==================
+
+ * add `parser` function for selecting content parser
+
 1.0.3 / 2017-02-18
 ==================
 
