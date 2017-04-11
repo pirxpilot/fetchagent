@@ -70,7 +70,7 @@ describe('fetchagent', function () {
       });
   });
 
-  it.only('should use custom parsing', function(done) {
+  it('should use custom parsing', function(done) {
     fetchagent
       .get('http://httpbin.org/bytes/30')
       .parser(function(contentType) {
