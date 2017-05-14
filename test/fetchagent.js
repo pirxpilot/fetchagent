@@ -40,6 +40,14 @@ describe('fetchagent', function () {
         });
   });
 
+  it('should ignore empty query', function(done) {
+    fetchagent
+      .get('http://httpbin.org/bytes/30')
+      .query({})
+      .end(done);
+  });
+
+
   it('should set request headers', function() {
     return fetchagent
       .get('http://httpbin.org/get')
