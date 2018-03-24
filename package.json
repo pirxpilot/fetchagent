@@ -20,6 +20,8 @@
   "dependencies": {},
   "devDependencies": {
     "isomorphic-fetch": "^2.2.1",
+    "jsdom": "^11.6.2",
+    "jsdom-global": "^3.0.2",
     "jshint": "^2.9.4",
     "mocha": "^3.2.0",
     "replay": "^2.1.2",
