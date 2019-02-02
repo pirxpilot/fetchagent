@@ -1,16 +1,16 @@
-var should = require('should');
-var fetchagent = require('../');
+const should = require('should');
+const fetchagent = require('../');
 
-var Replay = require('replay');
+const Replay = require('replay');
 
-Replay.fixtures = __dirname + '/fixtures';
+Replay.fixtures = `${__dirname}/fixtures`;
 
 describe('fetchagent', function () {
 
   it('should get some text', function(done) {
     fetchagent
       .get('http://httpbin.org/xml')
-      .end(function(err, response) {
+      .end((err, response) => {
         should.not.exist(err);
         response.should.startWith('<?xml');
         done();
@@ -96,6 +96,5 @@ describe('fetchagent', function () {
         done();
       });
   });
-
 
 });
