@@ -1,6 +1,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
+[![Dependency Status][deps-image]][deps-url]
+[![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
 # fetchagent
 
@@ -66,5 +67,8 @@ MIT © [Damian Krzeminski](https://pirxpilot.me)
 [travis-url]: https://travis-ci.org/pirxpilot/fetchagent
 [travis-image]: https://img.shields.io/travis/pirxpilot/fetchagent.svg
 
-[gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/fetchagent.svg
-[gemnasium-url]: https://gemnasium.com/pirxpilot/fetchagent
+[deps-image]: https://img.shields.io/david/pirxpilot/fetchagent.svg
+[deps-url]: https://david-dm.org/pirxpilot/fetchagent
+
+[deps-dev-image]: https://img.shields.io/david/dev/pirxpilot/fetchagent.svg
+[deps-dev-url]: https://david-dm.org/pirxpilot/fetchagent?type=dev
