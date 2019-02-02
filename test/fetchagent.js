@@ -1,7 +1,7 @@
 const should = require('should');
 const fetchagent = require('../');
 
-const Replay = require('replay');
+const Replay = require('@pirxpilot/replay');
 
 Replay.fixtures = `${__dirname}/fixtures`;
 
