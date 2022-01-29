@@ -13,5 +13,5 @@
   "undef": true,
   "unused": true,
   "laxbreak": true,
-  "esversion": 6
+  "esversion": 11
 }
