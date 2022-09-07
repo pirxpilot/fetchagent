@@ -19,11 +19,11 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "isomorphic-fetch": "~2",
-    "jsdom": "~13",
+    "isomorphic-fetch": "~3",
+    "jsdom": "~20",
     "jsdom-global": "~3",
     "jshint": "~2",
-    "mocha": "~5",
+    "mocha": "~10",
     "@pirxpilot/replay": "~2",
     "should": "~13"
   },
