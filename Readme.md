@@ -1,7 +1,6 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][build-image]][build-url]
 [![Dependency Status][deps-image]][deps-url]
-[![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
 # fetchagent
 
@@ -61,14 +60,12 @@ To send request use on of:
 
 MIT © [Damian Krzeminski](https://pirxpilot.me)
 
-[npm-image]: https://img.shields.io/npm/v/fetchagent.svg
+[npm-image]: https://img.shields.io/npm/v/fetchagent
 [npm-url]: https://npmjs.org/package/fetchagent
 
-[travis-url]: https://travis-ci.org/pirxpilot/fetchagent
-[travis-image]: https://img.shields.io/travis/pirxpilot/fetchagent.svg
+[build-url]: https://github.com/pirxpilot/fetchagent/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/workflow/status/pirxpilot/fetchagent/check
 
-[deps-image]: https://img.shields.io/david/pirxpilot/fetchagent.svg
-[deps-url]: https://david-dm.org/pirxpilot/fetchagent
+[deps-image]: https://img.shields.io/librariesio/release/npm/fetchagent
+[deps-url]: https://libraries.io/npm/fetchagent
 
-[deps-dev-image]: https://img.shields.io/david/dev/pirxpilot/fetchagent.svg
-[deps-dev-url]: https://david-dm.org/pirxpilot/fetchagent?type=dev
