@@ -1,9 +1,8 @@
-const test = require('node:test');
-const fetchagent = require('../');
+import test from 'node:test';
+import Replay from '@pirxpilot/replay';
+import fetchagent from '../lib/fetchagent.js';
 
-const Replay = require('@pirxpilot/replay');
-
-Replay.fixtures = `${__dirname}/fixtures`;
+Replay.fixtures = `${import.meta.dirname}/fixtures`;
 
 test('should get some text', (t, done) => {
   fetchagent.get('http://httpbin.org/xml').end((err, response) => {

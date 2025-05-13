@@ -7,7 +7,12 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://pirxpilot.me"
   },
-  "repository": "pirxpilot/fetchagent",
+  "type": "module",
+  "exports": "./lib/fetchagent.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirxpilot/fetchagent.git"
+  },
   "license": "MIT",
   "keywords": [
     "fetchagent",
@@ -28,7 +33,6 @@
     "test": "make check"
   },
   "files": [
-    "index.js",
     "lib"
   ]
 }
