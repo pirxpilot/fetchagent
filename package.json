@@ -22,8 +22,7 @@
     "@pirxpilot/replay": "~2",
     "isomorphic-fetch": "~3",
     "jsdom": "~24",
-    "jsdom-global": "~3",
-    "should": "~13"
+    "jsdom-global": "~3"
   },
   "scripts": {
     "test": "make check"

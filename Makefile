@@ -9,7 +9,6 @@ format:
 test:
 	node \
 		--no-experimental-fetch \
-		--require should \
 		--require jsdom-global/register \
 		--require isomorphic-fetch \
 		--test
