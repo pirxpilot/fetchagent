@@ -18,7 +18,7 @@
     "xmlhttprequest"
   ],
   "devDependencies": {
-    "@pirxpilot/jshint": "~3",
+    "@biomejs/biome": "^1.9.4",
     "@pirxpilot/replay": "~2",
     "isomorphic-fetch": "~3",
     "jsdom": "~24",

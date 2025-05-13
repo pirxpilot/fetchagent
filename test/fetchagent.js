@@ -7,15 +7,12 @@ const Replay = require('@pirxpilot/replay');
 Replay.fixtures = `${__dirname}/fixtures`;
 
 describe('fetchagent', function () {
-
   it('should get some text', function (_, done) {
-    fetchagent
-      .get('http://httpbin.org/xml')
-      .end((err, response) => {
-        should.not.exist(err);
-        response.should.startWith('<?xml');
-        done();
-      });
+    fetchagent.get('http://httpbin.org/xml').end((err, response) => {
+      should.not.exist(err);
+      response.should.startWith('<?xml');
+      done();
+    });
   });
 
   it('should post and receive json', function () {
@@ -23,8 +20,7 @@ describe('fetchagent', function () {
       .post('http://httpbin.org/post')
       .send({ echo: 42 })
       .json()
-      .should.finally.have
-      .property('json')
+      .should.finally.have.property('json')
       .property('echo', 42);
   });
 
@@ -33,8 +29,7 @@ describe('fetchagent', function () {
       .get('http://httpbin.org/get')
       .query({ echo: 42, ll: [14, 30], name: 'with space?' })
       .json()
-      .should.finally.have
-      .property('args', {
+      .should.finally.have.property('args', {
         echo: '42',
         ll: '14,30',
         name: 'with space?'
@@ -42,41 +37,29 @@ describe('fetchagent', function () {
   });
 
   it('should ignore empty query', function (_, done) {
-    fetchagent
-      .get('http://httpbin.org/bytes/30')
-      .query({})
-      .end(done);
+    fetchagent.get('http://httpbin.org/bytes/30').query({}).end(done);
   });
-
 
   it('should set request headers', function () {
     return fetchagent
       .get('http://httpbin.org/get')
       .set('x-my-header', 'bongo')
       .json()
-      .should.finally.have
-      .property('headers')
+      .should.finally.have.property('headers')
       .property('X-My-Header', 'bongo');
   });
 
   it('should automatically redirect', function () {
-    return fetchagent
-      .get('http://httpbin.org/redirect/2')
-      .redirect(true)
-      .json()
-      .should.finally.have
-      .property('url');
+    return fetchagent.get('http://httpbin.org/redirect/2').redirect(true).json().should.finally.have.property('url');
   });
 
   it('should parse body even if status !== 200', function (_, done) {
-    return fetchagent
-      .get('http://httpbin.org/status/418')
-      .end(function (err, body) {
-        err.should.have.property('status', 418);
-        err.should.have.property('response');
-        body.should.match(/teapot/);
-        done();
-      });
+    return fetchagent.get('http://httpbin.org/status/418').end(function (err, body) {
+      err.should.have.property('status', 418);
+      err.should.have.property('response');
+      body.should.match(/teapot/);
+      done();
+    });
   });
 
   it('should use custom parsing', function (_, done) {
@@ -97,5 +80,4 @@ describe('fetchagent', function () {
         done();
       });
   });
-
 });
